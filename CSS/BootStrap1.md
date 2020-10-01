@@ -102,7 +102,7 @@ class="navbar-item"
 ```
 <div class="bg-primary">青色になるよ</div>
 ``` 
-##文字の中央寄せ
+## 文字の中央寄せ
 ``` 
 <p class="text-center">真ん中寄せになるよ</p>
 ``` 
@@ -114,11 +114,11 @@ class="navbar-item"
 </div>
 ``` 
 
-##padding
+## padding
 ``` 
 <div class="p-5">上下左右にpaddingが設定されるよ</div>
 ```
-##画像のソース
+## 画像のソース
 どちらでもOK!
 ``` 
 src="絶対パス"
@@ -161,7 +161,7 @@ src="相対パス"
 <div class="col"></div> 
 ```
 
-##改行
+## 改行
 あんまりよくないけど<br>が便利！
 ほんとは改行したい文章ごとに<p></p>で囲おう！
 
