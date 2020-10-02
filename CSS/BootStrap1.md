@@ -98,7 +98,7 @@ class="navbar-item"
 ```  
 
 # ヒーローエリア
-##背景色
+## 背景色
 ```
 <div class="bg-primary">青色になるよ</div>
 ``` 
@@ -124,9 +124,13 @@ class="navbar-item"
 src="絶対パス"
 src="相対パス"
 ```
-絶対パス とは・・・https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq6KW6PvwJa8URGELal4IjFPENpJ0gr0JsVQ&usqp=CAU  
+絶対パス とは・・・  
+https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq6KW6PvwJa8URGELal4IjFPENpJ0gr0JsVQ&usqp=CAU  
 
-相対パス とは・・・自分のパソコンにダウンロードして、ファイルに入れた画像の場所　"./assets/images/dog.jpg"  
+相対パス とは・・・  
+自分のパソコンにダウンロードして、ファイルに入れた画像の場所　"./assets/images/dog.jpg"  
+
+(パス参考資料)[https://webliker.info/78726/]  
 
 実際のコード
 ```  
