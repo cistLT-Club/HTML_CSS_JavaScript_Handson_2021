@@ -15,7 +15,7 @@ index.css
 # BootStrapとは  
 CSSファイルを書かなくて良くなる便利なもの！
 
-https://getbootstrap.jp/  
+[Bootstrap公式サイト](https://getbootstrap.jp/ )  
 
 ```
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -45,7 +45,7 @@ https://getbootstrap.jp/
 ```  
 
 # 今回作るもの
-https://portfolio-cistlt.web.app/
+[完成サイト](https://portfolio-cistlt.web.app/)  
 ![screencapture-portfolio-cistlt-web-app-1601515146316](https://user-images.githubusercontent.com/56716847/94755476-a7026e00-03cf-11eb-9382-9c440102b116.png)
 
 
@@ -124,8 +124,9 @@ class="navbar-item"
 src="絶対パス"
 src="相対パス"
 ```
-絶対パス とは・・・https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq6KW6PvwJa8URGELal4IjFPENpJ0gr0JsVQ&usqp=CAU
-相対パス とは・・・自分のパソコンにダウンロードして、ファイルに入れた画像の場所　"./assets/images/dog.jpg"
+絶対パス とは・・・https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq6KW6PvwJa8URGELal4IjFPENpJ0gr0JsVQ&usqp=CAU  
+
+相対パス とは・・・自分のパソコンにダウンロードして、ファイルに入れた画像の場所　"./assets/images/dog.jpg"  
 
 実際のコード
 ```  
@@ -194,4 +195,47 @@ src="相対パス"
 <footer class="footer bg-info text-center p-5">
       <p>&copy:2020 CISTLT. ALL rights reserved</p>
 </footer>
-``` 
+```   
+
+# OGP  
+(参考サイト)[https://ferret-plus.com/610]  
+
+```  
+<!-- ※基本共通設定 -->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<title>ページのタイトル</title>
+<meta property="og:title" content="ページのタイトル" />
+<meta property="og:type" content="ページの種類" />
+<meta property="og:url" content="ページのURL" />
+<meta property="og:image" content="サムネイル画像のURL" />
+<meta property="og:site_name" content="サイト名" />
+<meta property="og:description" content="ページのディスクリプション" />
+
+<!-- Facebook用設定 -->
+<meta property="fb:app_id" content="App-ID（15文字の半角数字）" />
+もしくは
+<meta property="fb:admins" content="adminID（15文字の半角数字）" />
+
+<!-- ※Twitter共通設定 -->
+<meta name="twitter:card" content="Twitterカードの種類" />
+
+...
+
+</head>
+
+```
+
+# Deploy  
+
+Google Accountを作る  
+Firebase login  
+プロジェクトを作る  
+Terminalに移動  
+firebase login
+firebase hosting
+hostingを選ぶ   
+publicでpublicの中にhtmlファイルを入れる
+package.jsonは書き換える？scriptのところをpublicにする必要があるかも  
+
+
+
