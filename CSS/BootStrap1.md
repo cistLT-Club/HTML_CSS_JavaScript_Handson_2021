@@ -1,5 +1,107 @@
 # 前回までの復習
 
+
+コピペしてください  
+```
+<!doctype html>
+<html lang="ja">
+    <!-- ※基本共通設定 -->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <title>Portfolio</title>
+  <meta property="og:title" content="Portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://portfolio-cistlt.web.app" />
+  <meta property="og:image" content="https://wired.jp/app/uploads/2019/10/dog-unsolicited.jpg" />
+  <meta property="og:site_name" content="CISTLTのportfolio" />
+  <meta property="og:description" content="これはCISTLTサークルのホームページです。ぜひ、ご覧あれ" />
+  
+  <!-- ※Twitter共通設定 -->
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  ...
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title id="top">Portfolio</title>
+  </head>
+  <body>
+
+    <div class="container">
+    <div class="bg-dark">
+
+
+<!--ここからnavbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="">Top</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#portfolio">Portfolio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#whoami">Whoami</a>
+      </li>
+      <!--works-->
+      <li class="nav-item">
+        <a class="nav-link" href="#works">Works</a>
+      </li>
+      <!--works-->
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--ここまでnavbar-->
+
+      <div class="bg-primary text-center p-5">
+        <h2>logoロゴ</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq6KW6PvwJa8URGELal4IjFPENpJ0gr0JsVQ&usqp=CAU"><!--画像-->
+      </div>
+
+     <div class="bg-secondary text-center p-5">
+        <h1 id="portfolio">ポートフォリオだよ</h1><!--大見出し-->
+    </div>
+
+    <div class=" bg-success text-center p-5">
+        <h2 id="whoami">whoami自己紹介</h2>
+        <p>私は公立千歳科学技術大学の科技大太郎だよ。<br> なんつって</p><!--段落-->
+    </div>
+<!--ここからworks-->
+    <div class="bg-warning text-center p-5">
+      <h2 id="works">works</h2>
+      <!--gridですよ-->
+      <div class="row">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQJUvYGK45eOFgPFlX7pin1W3ptz8jq5i02JA&usqp=CAU" alt="" class="col">
+      <p class="col">これはCISTLTサークルのホームページです。<br>画像はサークルメンバーでチーム開発したローランドさんです。<br>React.jsをつかっています。</p>
+      </div>
+  </div>
+<!--ここまでworks-->
+
+    <div class=" bg-danger text-center p-5">
+        <h2 id="contact">contactアクセス</h2>
+        <p>科技大@メールアドレスドットコム</p>
+    </div>
+
+    <!--ここからfooter-->
+    <footer class="footer bg-info text-center p-5">
+      <p>&copy:2020 CISTLT. ALL rights reserved</p>
+    </footer>
+    <!--ここまでfooter-->
+    </div>
+  </div>
+  </body>
+</html>
+```  
+
+
+
+
+
 index.html
 ```
 <p class="blue">青にしたいです</p>
