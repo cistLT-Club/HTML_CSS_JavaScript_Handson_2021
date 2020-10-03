@@ -256,7 +256,7 @@ https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq6KW6PvwJa8URGELal4IjFP
 </div>
 ```  
 # WORKS
-##gird
+## gird
 いい感じに並べてくれるくん
 親要素
 ```
