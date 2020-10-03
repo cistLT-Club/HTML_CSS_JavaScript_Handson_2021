@@ -232,7 +232,7 @@ https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq6KW6PvwJa8URGELal4IjFP
 相対パス とは・・・  
 自分のパソコンにダウンロードして、ファイルに入れた画像の場所　"./assets/images/dog.jpg"  
 
-(パス参考資料)[https://webliker.info/78726/]  
+[パス参考資料](https://webliker.info/78726/)  
 
 実際のコード
 ```  
@@ -304,7 +304,7 @@ https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq6KW6PvwJa8URGELal4IjFP
 ```   
 
 # OGP  
-(参考サイト)[https://ferret-plus.com/610]  
+[参考サイト](https://ferret-plus.com/610)  
 
 ```  
 <!-- ※基本共通設定 -->
@@ -332,6 +332,8 @@ https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq6KW6PvwJa8URGELal4IjFP
 ```
 
 # Deploy  
+
+[参考資料](https://www.topgate.co.jp/firebase04-firebase-hosting-deploy-website#i-6)  
 
 Google Accountを作る  
 Firebase login  
