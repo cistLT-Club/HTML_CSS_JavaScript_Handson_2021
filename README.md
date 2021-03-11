@@ -36,7 +36,7 @@ HTMLとCSSとJavaScriptの技術をメインで勉強します。
 
 
 ## 番外編
-[ReactでWebサイトを作ろう！](a)  
+[ReactでWebサイトを作ろう！](https://github.com/hatsuki0111/ReactHandson/blob/master/Handson/CreateEnvironment.md)  
 
 
 
