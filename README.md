@@ -38,13 +38,3 @@ HTML と CSS と JavaScript の技術をメインで勉強します。
 ## CSS 編
 
 [CSS0_CSS の書き方と使い方](https://github.com/cistLT-Club/HTML_CSS_JavaScript_Handson_2021/blob/master/CSS/css1.md)
-
-**今回のハンズオンはここまで！**
-
-## JavaScript 編
-
-[JavaScript の基本と API の利用](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson_2021/blob/master/JavaScript/JavaScript1.md)
-
-## 番外編
-
-[React で Web サイトを作ろう！](https://github.com/hatsuki0111/ReactHandson/blob/master/Handson/CreateEnvironment.md)

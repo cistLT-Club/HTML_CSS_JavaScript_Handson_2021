@@ -144,4 +144,4 @@ div との違いとして、`<div>` はブロック要素(前後に改行がは�
 [表の作り方](https://www.sejuku.net/blog/49377)
 
 [CSS Handson へ進む](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson_2021/blob/master/CSS/css1.md)  
-[最初に戻る](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson_2021/blob/master/README.md)
+[最初に戻る](https://github.com/cistLT-Club/HTML_CSS_JavaScript_Handson_2021)
