@@ -1,66 +1,122 @@
 # CSS Handson
 
-## CSSとは？  
-CSSはHTMLにスタイル機能を提供する言語です  
-HTMLがページのコンテンツを記述するための言語なのに対し、CSSはそのコンテンツの表示の仕方をコントロールするもの  
-つまり、デザインするやつ！！！！  
+## CSS とは？
 
+CSS は HTML にスタイル機能を提供する言語です  
+HTML がページのコンテンツを記述するための言語なのに対し、CSS はそのコンテンツの表示の仕方をコントロールするもの  
+つまり、デザインするやつ！！！！
 
-## CSSを書く場所
+## CSS を書く場所
 
-index.html  
+index.html
+
 ```
 <p style="color: yellow;">ねこ</p>
-```  
-ねこが赤くなる
+```
 
+ねこが赤くなる
 
 ```
 <p>ぞう</p>
 <style>
   p{color: blue;}
-</style> 
-```  
+</style>
+```
+
 ぞうが青くなる  
-など書ける  
+など書ける
+
+**body の中に書きましょう！**
+
+```
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>サイトタイトル</title>
+  <meta name="description" content="サイトの説明を記載します">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <!-- ここにコンテンツを記載します -->
+  <p>ぞう</p>
+  <style>
+    p{color: blue;}
+  </style>
+</body>
+</html>
+
+```
 
 ### 基本は外部ファイルで書く
 
-cssファイルをつくる
-style.cssをhtmlと同じ場所につくろう！  
+css ファイルをつくる
+style.css を html と同じ場所につくろう！  
 -index.html  
 -style.css
 
-拡張子は.css  
+拡張子は.css
 
-style.css  
+style.css
+
 ```
 p {
 color: #ff0000;
 }
-```  
-このようにカラーコードでも指定できる  
+```
 
+このようにカラーコードでも指定できる
 
-cssの外部ファイルを読み込もう！  
-headに書こう！  
+css の外部ファイルを読み込もう！  
+head に書こう！
 
-index.html  
+index.html
+
 ```
 <link rel="stylesheet" href="style.css">　
-```  
+```
 
-ねことぞうの色がかわることを確認する  
+すべて書くとこんな感じ。
 
+index.html
 
-## CSSのクラス属性
+```
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>サイトタイトル</title>
+  <meta name="description" content="サイトの説明を記載します">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ここにコンテンツを記載します -->
+  <p>ぞう</p>
+  <p>ねこ</p>
+</body>
+</html>
+```
 
-HTMLのタグにCSSのクラスを当てることでデザインを加えることができます。  
-しかし、結構ややこしいので、実際にやりながら見てみましょう！  
+style.css
 
-まずは、こんな感じでHTMLを書きましょう。
+```
+p {
+color: #ff0000;
+}
+```
 
-index.html  
+ねことぞうの色がかわることを確認する
+
+## CSS のクラス属性
+
+HTML のタグに CSS のクラスを当てることでデザインを加えることができます。  
+しかし、結構ややこしいので、実際にやりながら見てみましょう！
+
+まずは、こんな感じで HTML を書きましょう。
+
+index.html
+
 ```
 <!DOCTYPE html>
 <html lang="ja">
@@ -93,27 +149,24 @@ index.html
 </html>
 ```
 
+**class 属性を追加する**
 
-**class属性を追加する**  
+class 属性の書式
 
-
-class属性の書式  
 ```
 divタグの場合
-<div class="クラス名"></div>をつける  
+<div class="クラス名"></div>をつける
 
 pタグの場合
 <p class="クラス名">帰納法</p>
-```  
+```
 
-  
-class属性は、そのタグが所属するグループの名前を指します  
+class 属性は、そのタグが所属するグループの名前を指します
 
+**div タグに class 属性をつけてみよう！**
 
-**divタグにclass属性をつけてみよう！**  
+index.html
 
-
-index.html  
 ```
 <!DOCTYPE html>
 <html lang="ja">
@@ -126,12 +179,12 @@ index.html
 </head>
 <body>
 <div class="wrapper"><!--ここ-->
-    
+
     <div class="top">　<!--ここ-->
         <h2>logoロゴ</h2>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq6KW6PvwJa8URGELal4IjFPENpJ0gr0JsVQ&usqp=CAU">
     </div>
-    
+
     <div class="portfolio"> <!--ここ-->
         <h1>ポートフォリオだよ</h1>
     </div>
@@ -148,23 +201,23 @@ index.html
 </div>
 </body>
 </html>
-```  
-
-
-
+```
 
 **背景色を指定する background-color**  
-クラス属性を可視化するために背景色をつける  
+クラス属性を可視化するために背景色をつける
 
-背景色  
+背景色
+
 ```
 background-color:red;
-```  
-redの部分を好きな色に変えられる  
+```
 
-CSSのコードは以下の形で背景色をつけていきます。
+red の部分を好きな色に変えられる
 
-sytle.css  
+CSS のコードは以下の形で背景色をつけていきます。
+
+sytle.css
+
 ```
 .wrapper{
     background-color: hotpink;
@@ -186,93 +239,95 @@ sytle.css
     background-color: chartreuse;
 }
 
-```  
+```
 
+class がわかったでしょうか？  
+背景色をつけるとグループ分けがわかりやすいですね！
 
-classがわかったでしょうか？  
-背景色をつけるとグループ分けがわかりやすいですね！  
-
-class属性はHTMLのすべてのタグにつけることができる  
+class 属性は HTML のすべてのタグにつけることができる  
 また、複数のタグに同じクラス名をつけることも可能
-逆に、1つのタグに複数のクラス名をつけることも可能  
-
+逆に、1 つのタグに複数のクラス名をつけることも可能
 
 ※クラス名は表示するコンテンツの内容を説明するものをつけよう！
 
-## CSSのコメント文  
+## CSS のコメント文
 
 ```
 /*
-ガールズルール　裸足でSummer シンクロニシティ 
+ガールズルール　裸足でSummer シンクロニシティ
 */
-```  
-コメント文の中に/*　はいれてはいけない  
+```
+
+コメント文の中に/\*　はいれてはいけない
 
 ## フォント、フォントサイズ
 
 **フォント font-family: serif;**  
-sans-serif　ゴシック  
-serif 明朝  
+sans-serif 　ゴシック  
+serif 明朝
 
-style.css  
+style.css
+
 ```
 html {
   font-family: sans-serif;
 }
-```  
-デフォルトはゴシックなので変化はないが、serifにすると変化するので確かめてみてください。  
+```
 
+デフォルトはゴシックなので変化はないが、serif にすると変化するので確かめてみてください。
 
-**フォントサイズ font-size: 20px;**  
+**フォントサイズ font-size: 20px;**
 
-font-size: 数字px  
-数字でサイズを指定できる  
+font-size: 数字 px  
+数字でサイズを指定できる
 
-style.css  
+style.css
+
 ```
 p {
   font-size: 22px;
 }
 
 ```
-文字が大きくなることを確認する  
 
+文字が大きくなることを確認する
 
 ## px % em
+
 px
 コンピュータディスプレイの解像度の点の大きさ  
-20oxは20個分のドット  
+20ox は 20 個分のドット  
 この単位は環境によって変化しない絶対単位
 
 %
 スタイルを適用しないときの幅やフォントサイズと比べて何%の大きさで表示させるか  
-親要素が10pxのフォントのとき子要素で300%にすると3倍の大きさになる 
-画像の縦横比を保ったまま画像サイズを変更できる  
-
+親要素が 10px のフォントのとき子要素で 300%にすると 3 倍の大きさになる
+画像の縦横比を保ったまま画像サイズを変更できる
 
 em
-emは文字の高さを基準とした単位です。
+em は文字の高さを基準とした単位です。
 「エム」と読む  
-emは使われている書体（フォント）や、CSSで指定している文字の大きさによって変化する相対単位です。
-例えば文字の大きさを10pxにしていたなら、1emは10pxということになり、30pxを指定していたなら、1emは30pxに変化します。
+em は使われている書体（フォント）や、CSS で指定している文字の大きさによって変化する相対単位です。
+例えば文字の大きさを 10px にしていたなら、1em は 10px ということになり、30px を指定していたなら、1em は 30px に変化します。
 
-pxか%で雰囲気でいこう！(一番よくない)  
+px か%で雰囲気でいこう！(一番よくない)
 
+## 親要素、子要素
 
-## 親要素、子要素  
-
-![image](https://user-images.githubusercontent.com/44164993/91327998-3df06f00-e801-11ea-9b97-f3a7809fc5d8.png)  
-
+![image](https://user-images.githubusercontent.com/44164993/91327998-3df06f00-e801-11ea-9b97-f3a7809fc5d8.png)
 
 index.html
+
 ```
 <div class="oyayouso"><!--親要素-->
 <div class="koyouso"><!--子要素-->
   習近平
 </div>
 </div>
-```  
+```
+
 style.css
+
 ```
 .oyayouso {
   background-color: blue;
@@ -280,54 +335,52 @@ style.css
 .koyouso {
   background-color: yellow;
 }
-```  
+```
 
+## CSS のボックスモデル
 
-## CSSのボックスモデル  
 マージン
 ボーダー
 パディング
 コンテンツ領域
 
-![image](https://user-images.githubusercontent.com/44164993/91206041-76c90f00-e741-11ea-854c-2e7245dfa31a.png)  
+![image](https://user-images.githubusercontent.com/44164993/91206041-76c90f00-e741-11ea-854c-2e7245dfa31a.png)
 
-![image](https://user-images.githubusercontent.com/44164993/91206142-a1b36300-e741-11ea-9424-43e2cae78ea9.png)  
+![image](https://user-images.githubusercontent.com/44164993/91206142-a1b36300-e741-11ea-9424-43e2cae78ea9.png)
 
-
-## ロゴを真ん中に配置する  
+## ロゴを真ん中に配置する
 
 style.css
+
 ```
 .top{
   margin: 0 0 40px 0;
   line-height: 0;
   text-align: center;
 }
-```  
+```
 
-**text-align**  
+**text-align**
 
-テキストでも画像でも揃えられる 
+テキストでも画像でも揃えられる
+
 ```
 text-align: center;
-```  
-center left rigntなどある 
+```
 
-**margin: 上 右 下 左;**  
+center left rignt などある
 
-4辺のマージンの大きさを1行で設定できるmarginプロパティ  
-余白だね  
+**margin: 上 右 下 左;**
 
-lign-hegihtは文字の行間を変えられる  
+4 辺のマージンの大きさを 1 行で設定できる margin プロパティ  
+余白だね
 
-
-
-
+lign-hegiht は文字の行間を変えられる
 
 ## ナビゲーションバーをつくろう
 
+index.html
 
-index.html  
 ```
 </head>
 <body>
@@ -346,50 +399,55 @@ index.html
 
     <div class="top" id="top">　<!--ここ-->
       <h2>logoロゴ</h2>
-  
-```  
-ナビゲーションバーができた！  
 
-style.cssの一番下  
+```
+
+ナビゲーションバーができた！
+
+style.css の一番下
+
 ```
 .nav li{
 display: inline;
 list-style-type: none;
 padding-right: 30px;
 }
-```  
+```
+
 **display: inline**  
 インラインボックスとして表示  
-インラインボックスは要素を1行ずつボックスにし折り返して表示します。  
-ブロックと違い改行はされないため、インラインボックスを続けて記載すると、ブラウザ横幅まで横並びに表示されます。  
+インラインボックスは要素を 1 行ずつボックスにし折り返して表示します。  
+ブロックと違い改行はされないため、インラインボックスを続けて記載すると、ブラウザ横幅まで横並びに表示されます。
 
-**list-style-type**  
+**list-style-type**
 
 list-style-type:none;でナビゲーションバーのリストを消す  
 ・あいう  
 ・えおか  
 ・きくけ  
-の・が消える  
+の・が消える
 
 **padding right**  
-padding right: 30px;  
+padding right: 30px;
 
-パディングの右側を30px開ける  
+パディングの右側を 30px 開ける
 
-
-**ナビゲーションバーの固定**  
+**ナビゲーションバーの固定**
 
 style.css
+
 ```
  .nav{
   position: fixed;
 }
-```    
+```
 
-## ナビゲーションバーのリンクの色を変える  
-まずナビゲーションバーの遷移先を作ろう！  
+## ナビゲーションバーのリンクの色を変える
 
-index.html  
+まずナビゲーションバーの遷移先を作ろう！
+
+index.html
+
 ```
 <nav class="nav">
   <ul>
@@ -399,20 +457,22 @@ index.html
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-```  
+```
 
-idをつけよう！  
-index.html  
+id をつけよう！  
+index.html
+
 ```
 <div>class="top" id="top"</div>
 <div>class="portfolio" id="portfolio"</div>
 <div>class="whoami" id="whoami"</div>
 <div>class="contact" id="contact"</div>
-```  
+```
 
-リンクの色を変える  
+リンクの色を変える
 
-style.css  
+style.css
+
 ```
 .nav a:link{
   color: yellow;
@@ -432,29 +492,31 @@ style.css
   color: yellow;
   text-decoration: none;
 }
-```  
+```
 
-a:link　：アクセスしたことのないリンク  
-a:visited　：アクセスしたことのあるリンク  
-a:hover　：マウスが上に乗っている状態のリンク  
-a:active　：クリック中のリンク  
+a:link 　：アクセスしたことのないリンク  
+a:visited 　：アクセスしたことのあるリンク  
+a:hover 　：マウスが上に乗っている状態のリンク  
+a:active 　：クリック中のリンク
 
+## フッターを作成
 
-## フッターを作成  
 foot、足の部分、つまり下  
 フッターはサイトを見ていった時、最後に現れる場所なのでそれに合わせた中身にしましょう。  
-例えば、会社名やメニュー、コピーライト表記などです。  
+例えば、会社名やメニュー、コピーライト表記などです。
 
-index.html  
+index.html
+
 ```
 <footer class="footer">
   <p>&copy:2020 Copyright CISTLT. ALL rights reserved</p>
 </footer>
-```  
+```
 
-&copyで©マークになる  
+&copy で © マークになる
 
-style.css  
+style.css
+
 ```
 .footer{
   background-color: yellow;
@@ -463,12 +525,13 @@ style.css
   font-size: 12px;
   color: red;
 }
-```  
- 
-## ページの最大幅の設定  
+```
+
+## ページの最大幅の設定
 
 ページの最大幅を設定して、ウインドウ中央に配置する  
-style.css  
+style.css
+
 ```
 body{
   margin: 0 0 0 0;
@@ -479,26 +542,29 @@ margin: 0 auto 0 auto;
 max-width: 960px;
 }
 
-```  
-wrapperのbackground-color: hotpink;を  
+```
+
+wrapper の background-color: hotpink;を
+
 ```
 body{
   background-color: hotpink;
 }
-```  
+```
 
-に書き換える  
+に書き換える
 
-左右のマージンをautoにするとページが中央ぞろえになる  
-ページの幅が横に広くなりすぎると見づらいので、伸縮する最大幅だけは設定する  
+左右のマージンを auto にするとページが中央ぞろえになる  
+ページの幅が横に広くなりすぎると見づらいので、伸縮する最大幅だけは設定する
 
-max-widthプロパティは、ボックスの最大幅を設定するのに使う。今回はこの値を960pxにしている  
+max-width プロパティは、ボックスの最大幅を設定するのに使う。今回はこの値を 960px にしている
 
+## works をつくろう!
 
-## worksをつくろう!  
-**フレックスボックス**  
+**フレックスボックス**
 
-自己紹介の下にworksをつくる  
+自己紹介の下に works をつくる
+
 ```
 <div class="workscolor">
       <h2 id="works">works</h2>
@@ -507,15 +573,16 @@ max-widthプロパティは、ボックスの最大幅を設定するのに使�
       <p class="works-p">これはCISTLTサークルのホームページです。画像はサークルメンバーでチーム開発したローランドさんです。React.jsをつかっています。</p>
       </div>
 </div>
-```  
+```
 
-ナブバーにworksを追加  
+ナブバーに works を追加
 
 ```
 <li><a href="#works">Works</a></li>
-```  
+```
 
-画像サイズの変更  
+画像サイズの変更
+
 ```
 .works-img {
     display: block;
@@ -523,11 +590,12 @@ max-widthプロパティは、ボックスの最大幅を設定するのに使�
 }
 
 ```
-display:blocksでブロック要素に変えられる  
-画像はインライン要素なため、ブロック要素としてあげるとフレックスボックスを使ったときなどに便利  
 
+display:blocks でブロック要素に変えられる  
+画像はインライン要素なため、ブロック要素としてあげるとフレックスボックスを使ったときなどに便利
 
-画像とテキストを横に並べる  
+画像とテキストを横に並べる
+
 ```
 .workscolor{
     background-color: aqua;
@@ -536,7 +604,7 @@ display:blocksでブロック要素に変えられる
 .works{
     display: flex;
   }
-  .works-p {  
+  .works-p {
     padding: 20px 8px;
  }
   .works-img {
@@ -545,118 +613,121 @@ display:blocksでブロック要素に変えられる
     margin-right: 16px;
     margin-left: 16px;
     }
-  ```  
- 
-display:flexで自動的に横に並ぶ  
+```
 
+display:flex で自動的に横に並ぶ
 
-横に並んだボックスのうち、幅を伸縮させたい  
+横に並んだボックスのうち、幅を伸縮させたい
+
 ```
 .works-img{
   flex: 1 1 auto;
 }
-```  
+```
 
-1.flex: 1 1 auto;と書く  
+1.flex: 1 1 auto;と書く
 
+横に並んだボックスのうち、幅を固定させたい
 
-横に並んだボックスのうち、幅を固定させたい 
 ```
 .works-p{
   flex: 0 0 400px;
 }
-```  
-2.flex:0 0 固定幅 と書く  
+```
 
+2.flex:0 0 固定幅 と書く
 
-実用上はこの1.と2.の2パターンを覚えておけばよい  
-
+実用上はこの 1.と 2.の 2 パターンを覚えておけばよい
 
 ## 模写していこう！！！
 
 模写をすることで勉強したの知識をいれこむ
 
-
-## レスポンシブデザイン  
+## レスポンシブデザイン
 
 スマートフォンやパソコンなどのすべての端末に対応できるページを作る方法を
-レスポンシブデザインという！  
+レスポンシブデザインという！
 
-レスポンシブ3か条  
-* ページの横幅がウインドウに合わせて伸縮できる  
-* 表示できる面積に合わせて、画像を伸縮できる  
-* 画面サイズに合わせて、最適なレイアウトに切り替える(スマホならナビゲーションバーが3本線のハンバーガーメニューになるとか)  
+レスポンシブ 3 か条
 
-chromeブラウザを右クリックで検証し、端末ごとのサイズを見てみよう！  f12かその他のツールデベロッパツール  
+- ページの横幅がウインドウに合わせて伸縮できる
+- 表示できる面積に合わせて、画像を伸縮できる
+- 画面サイズに合わせて、最適なレイアウトに切り替える(スマホならナビゲーションバーが 3 本線のハンバーガーメニューになるとか)
 
-楽しんだところでviewportを記述する  
+chrome ブラウザを右クリックで検証し、端末ごとのサイズを見てみよう！ f12 かその他のツールデベロッパツール
 
-Emmet  
+楽しんだところで viewport を記述する
+
+Emmet
+
 ```
 meta:vp
-```  
+```
 
-index.html  
+index.html
+
 ```
  <meta name="viewport" content="width=device-width, initial-scale=1" />
- ```  
- を<head>の中に記述する  
-  
- ビューポート(viewport)は表示画面のこと  
-  viewportを設定していないPC向けのページをスマートフォンで表示すると、文字もページも小さくなってしまいます。「viewport」の概念は、デスクトップPCだけの環境では意識する必要はあまりありませんでした。ですが、今はデスクトップPCよりタブレット等の使用頻度が高くなり、見やすくするためにそれぞれのデバイスでのズレがないように指定する必要が出てきました。
-設定されていないと、横幅いっぱいでおさまらないコンテンツや本文は横のスクロールがついて表示されてしまい、閲覧しにくくなってしまいます。そこで、viewportを指定することで、画面幅いっぱいにコンテンツや本文がおさまるようにしていくのです。  
+```
 
+を<head>の中に記述する
 
-ただ、viewportを設定しただけでは最適化されたとは言えません。viewportでは表示領域を設定して、ページが見やすいように拡大されているだけになっています。これを解消するために、スマートフォン用にCSSでレイアウトを設定してあげる必要があります。  
+ビューポート(viewport)は表示画面のこと  
+ viewport を設定していない PC 向けのページをスマートフォンで表示すると、文字もページも小さくなってしまいます。「viewport」の概念は、デスクトップ PC だけの環境では意識する必要はあまりありませんでした。ですが、今はデスクトップ PC よりタブレット等の使用頻度が高くなり、見やすくするためにそれぞれのデバイスでのズレがないように指定する必要が出てきました。
+設定されていないと、横幅いっぱいでおさまらないコンテンツや本文は横のスクロールがついて表示されてしまい、閲覧しにくくなってしまいます。そこで、viewport を指定することで、画面幅いっぱいにコンテンツや本文がおさまるようにしていくのです。
 
+ただ、viewport を設定しただけでは最適化されたとは言えません。viewport では表示領域を設定して、ページが見やすいように拡大されているだけになっています。これを解消するために、スマートフォン用に CSS でレイアウトを設定してあげる必要があります。
 
-表示されている画像を伸縮させる  
+表示されている画像を伸縮させる
 
-<img>タグのcssを追加する  
+<img>タグの css を追加する
+
 ```
 img {
   max-width: 50%;/*ブラウザの伸縮*/
   height: auto; /*ブラウザの伸縮*/
   margin-bottom: 16px;
 }
-```  
+```
+
 max-width: 50%;  
 height: auto;  
-画面の最大幅でも50%まで、高さは自動調整  
+画面の最大幅でも 50%まで、高さは自動調整
 
 ブラウザ伸び縮みさせてみてー
-変わったのわかった？  
+変わったのわかった？
 
 メディアクエリを使用する  
-style.cssの一番下に@mediaを記述する  
+style.css の一番下に@media を記述する
 
 ```
 @media screen and (max-width: 768px) {
 （ここにモバイル用スタイルを記述）
 }
-```  
+```
 
-@medhiaはメディアクエリといわれ()の条件をみたしたときに適用するスタイル  
-768pxはなに？  
-標準的なタブレット端末(ipad)の四辺の短い2辺の長さ
-768以下がスマホや小型タブレット
+@medhia はメディアクエリといわれ()の条件をみたしたときに適用するスタイル  
+768px はなに？  
+標準的なタブレット端末(ipad)の四辺の短い 2 辺の長さ
+768 以下がスマホや小型タブレット
 あとはノートパソコン、ディスプレイとか
-768をブレイクポイントといい、ipadの画面幅にするのが一般的  
-デベロッパーツールのipadを選択すると768pxとなっているのがわかる  
-
+768 をブレイクポイントといい、ipad の画面幅にするのが一般的  
+デベロッパーツールの ipad を選択すると 768px となっているのがわかる
 
 モバイル表示のときだけページの左右にスペースをつくる  
 メディアクエリの中
+
 ```
 .wrapper{
   margin: 0 8px;
 }
-```  
+```
 
-メディアクエリの条件を満たすときのスタイル  
+メディアクエリの条件を満たすときのスタイル
 
 ロゴ画像のサイズを指定する  
 メディアクエリの中
+
 ```
 .top{
   margin: 30px 0;
@@ -665,11 +736,11 @@ style.cssの一番下に@mediaを記述する
 .top img{
   width: 200px;
 }
-```  
-
+```
 
 スマホのとき、ナビゲーションのリストを縦に並べる  
-メディアクエリの中  
+メディアクエリの中
+
 ```
 .nav {
   background-color: transparent;/*背景を透明にする*/
@@ -678,15 +749,15 @@ style.cssの一番下に@mediaを記述する
 .nav li{
   display: block;
 }
-```  
-ナビゲーションバーの背景を透明にすることで背面の画面が見えるようになる  
+```
 
-
+ナビゲーションバーの背景を透明にすることで背面の画面が見えるようになる
 
 画像とテキストのフレックスボックスを解除する
-画面幅が狭いのでレイアウトを解除する必要がある  
+画面幅が狭いのでレイアウトを解除する必要がある
 
-メディアクエリの中  
+メディアクエリの中
+
 ```
 .works{
   display: block;
@@ -698,30 +769,29 @@ style.cssの一番下に@mediaを記述する
 .works-p{
   width: 100%;
 }
-```  
+```
 
 横揺れ防止を追加  
-メディアクエリの中  
+メディアクエリの中
+
 ```
  /*横揺れ防止*/
   body{overflow-x:hidden;}
   html{overflow-x:hidden;}
 
-```  
+```
 
-overflow-x:hidden　っで、x軸方向（横方向）にはみ出した部分を隠します。  
+overflow-x:hidden 　っで、x 軸方向（横方向）にはみ出した部分を隠します。
 
+最後 text-align: center で文字を真ん中にする
 
-最後text-align: centerで文字を真ん中にする  
-* ポートフォリオをだよ  
-* whoami  
-* works  
-* contactアクセス  
-* フッター  
+- ポートフォリオをだよ
+- whoami
+- works
+- contact アクセス
+- フッター
 
+おけー！！！！！CSS 終わり！！
 
-
-おけー！！！！！CSS終わり！！
-
-[JavaScript Handsonへ進む](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson/blob/master/JavaScript/JavaScript1.md)  
-[最初に戻る](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson)  
+[JavaScript Handson へ進む](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson/blob/master/JavaScript/JavaScript1.md)  
+[最初に戻る](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson)
