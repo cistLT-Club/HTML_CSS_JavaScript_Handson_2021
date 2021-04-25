@@ -29,20 +29,20 @@ HTML と CSS と JavaScript の技術をメインで勉強します。
 
 ## 環境構築編
 
-[VSCode_Install](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson/blob/master/VSCode.md)
+[VSCode_Install](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson_2021/blob/master/VSCode.md)
 
 ## HTML 編
 
-[HTML01\_雛形、タグの紹介](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson/blob/master/HTML/html1.md)  
+[HTML01\_雛形、タグの紹介](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson_2021/blob/master/HTML/html1.md)  
  []()
 
 ## CSS 編
 
-[CSS0_CSS の書き方と使い方](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson/blob/master/CSS/css1.md)
+[CSS0_CSS の書き方と使い方](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson_2021/blob/master/CSS/css1.md)
 
 ## JavaScript 編
 
-[JavaScript の基本と API の利用](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson/blob/master/JavaScript/JavaScript1.md)
+[JavaScript の基本と API の利用](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson_2021/blob/master/JavaScript/JavaScript1.md)
 
 ## 番外編
 

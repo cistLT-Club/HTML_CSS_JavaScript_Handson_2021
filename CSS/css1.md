@@ -793,5 +793,5 @@ overflow-x:hidden 　っで、x 軸方向（横方向）にはみ出した部分
 
 おけー！！！！！CSS 終わり！！
 
-[JavaScript Handson へ進む](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson/blob/master/JavaScript/JavaScript1.md)  
-[最初に戻る](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson)
+[JavaScript Handson へ進む](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson_2021/blob/master/JavaScript/JavaScript1.md)  
+[最初に戻る](https://github.com/CIST-LT-CLUB/HTML_CSS_JavaScript_Handson_2021)
